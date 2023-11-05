@@ -4,8 +4,37 @@ module.exports = {
   // darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
+      width: {
+        '224': '56rem'
+      },
       colors: {
         yellow: '#efc603',
+        gold: '#cba328',
+        rust: '#8d7f6b',
+        darkBlue: '#0d1122'
+      },
+
+      rotate: {
+        '5': '5deg',
+        '10': '10deg',
+        '15': '15deg',
+        '20': '20deg',
+        '25': '25deg',
+        '30': '30deg',
+        '35': '35deg',
+        '40': '40deg',
+        '50': '50deg',
+        '55': '55deg',
+        '60': '60deg',
+        '65': '65deg',
+        '70': '70deg',
+        '75': '75deg',
+        '80': '80deg',
+        '85': '85deg',
+      },
+
+      animation: {
+        'spin-slowest': 'spin 80s linear infinite'
       },
       keyframes: {
         typing: {
