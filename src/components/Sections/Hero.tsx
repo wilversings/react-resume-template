@@ -6,18 +6,44 @@ import {heroData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 
 const Hero: FC = memo(() => {
-  const {imageSrc, name, description} = heroData;
+  const {imageSrc, cornerSrc, name, description} = heroData;
 
   return (
     <Section noPadding sectionId={SectionId.Hero}>
-      <div className="relative overflow-hidden flex h-screen w-full items-center justify-center bg-darkBlue">
+
+      <div className="z-10 relative overflow-hidden flex h-screen w-full items-center justify-center bg-darkBlue bg-opacity-70 bg-grain">
+
+        <Image
+          alt="corner"
+          className="absolute left-5 top-20 object-fill w-1/5 opacity-30"
+          src={cornerSrc}
+          />
+        <Image
+          alt="corner"
+          className="absolute right-5 top-20 object-fill w-1/5 opacity-30 rotate-90"
+          src={cornerSrc}
+          />
+
+        <Image
+          alt="corner"
+          className="absolute right-5 bottom-5 object-fill w-1/5 opacity-30 rotate-180"
+          src={cornerSrc}
+          />
+        <Image
+          alt="corner"
+          className="absolute left-5 bottom-5 object-fill w-1/5 opacity-30 -rotate-90"
+          src={cornerSrc}
+          />
+
+
         <Image
           alt={`${name}-image`}
-          className="absolute z-10 object-fill w-224 top-28"
+          className="absolute z-20 object-fill w-224 top-28"
           priority
           src={imageSrc}
         />
-        <div className='absolute z-0 object-fill w-full animate-spin-slowest opacity-20'>
+
+        <div className='absolute z-10 object-fill w-full-x3 animate-spin-slowest opacity-30 '>
           <div className="absolute border-t border-gold w-full rotate-0"></div>
           <div className="absolute border-t border-gold w-full rotate-5"></div>
           <div className="absolute border-t border-gold w-full rotate-10"></div>
@@ -55,7 +81,7 @@ const Hero: FC = memo(() => {
           <div className="absolute border-t border-gold w-full -rotate-80"></div>
           <div className="absolute border-t border-gold w-full -rotate-85"></div>
         </div>
-        <div className="z-10  max-w-screen-lg px-4 lg:px-0">
+        <div className="z-20  max-w-screen-lg px-4 lg:px-0">
           <div className="flex flex-col items-center gap-y-6 p-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-rust to-gold">
             <h1 className="tracking-wider text-4xl font-bold sm:text-5xl lg:text-7xl uppercase">{name}</h1>
             <h2 className="text-m sm:text-m lg:text-2xl break-words">{description}</h2>

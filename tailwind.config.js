@@ -5,13 +5,18 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        '224': '56rem'
+        '224': '56rem',
+        'full-x3': '300%'
       },
       colors: {
         yellow: '#efc603',
         gold: '#cba328',
         rust: '#8d7f6b',
         darkBlue: '#0d1122'
+      },
+
+      backgroundImage: {
+        'grain': "url(\"data:image/svg+xml,%3C!-- svg: first layer --%3E%3Csvg viewBox='0 0 1000 1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.73' seed='591' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect opacity='0.20' width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E\")"
       },
 
       rotate: {
@@ -34,7 +39,7 @@ module.exports = {
       },
 
       animation: {
-        'spin-slowest': 'spin 80s linear infinite'
+        'spin-slowest': 'spin 120s linear infinite'
       },
       keyframes: {
         typing: {
