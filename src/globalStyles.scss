@@ -38,7 +38,6 @@ body {
   position: relative;
   width: 100%;
   color: #444444;
-  font-family: 'Monsante';
   background-color: #fafafa;
 }
 
@@ -50,4 +49,8 @@ th {
 
 th {
   font-weight: 600;
+}
+
+.text-monsante {
+  font-family: 'Monsante';
 }

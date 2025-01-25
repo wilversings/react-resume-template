@@ -21,8 +21,8 @@ export interface HomepageMeta {
  * Hero section
  */
 export interface Hero {
-  imageSrc: string;
-  cornerSrc: string;
+  plaqueSrc: string;
+  sideDecorationSrc: string;
   name: string;
   description: string;
   actions: HeroActionItem[];

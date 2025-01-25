@@ -16,7 +16,7 @@ module.exports = {
       },
 
       backgroundImage: {
-        'grain': "url(\"data:image/svg+xml,%3C!-- svg: first layer --%3E%3Csvg viewBox='0 0 1000 1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.73' seed='591' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect opacity='0.20' width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E\")"
+        'grain': "url(\"data:image/svg+xml,%3C!-- svg: first layer --%3E%3Csvg viewBox='0 0 1000 1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.63' seed='12' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect opacity='0.15' width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E\")"
       },
 
       rotate: {
